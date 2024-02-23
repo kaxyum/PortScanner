@@ -27,4 +27,4 @@ host = ip.strip()
 with ThreadPoolExecutor(max_workers=200) as executor:
     executor.map(query_port, [(host, port) for port in range(min_ports, max_ports)])
 
-print("Ports find :", successful_ports)
+print("Ports found :", successful_ports)
